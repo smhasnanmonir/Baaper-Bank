@@ -15,13 +15,13 @@
         <div class="deposite-div bg-orange-400 p-5 rounded-xl">
           <h1 class="text-2xl font-semibold">Deposite</h1>
           <p class="text-xl p-2 font-semibold">
-            $<span class="deposive-span">00</span>
+            $<span id="deposite-span">00</span>
           </p>
         </div>
         <div class="withdraw-div bg-red-400 p-5 rounded-xl">
           <h1 class="text-2xl font-semibold">Withdraw</h1>
           <p class="text-xl p-2 font-semibold">
-            $<span class="withdraw-span">00</span>
+            $<span id="withdraw-span">00</span>
           </p>
         </div>
         <div
@@ -29,7 +29,7 @@
         >
           <h1 class="text-2xl font-semibold">Balance</h1>
           <p class="text-xl p-2 font-semibold">
-            $<span class="balance-span">1200</span>
+            $<span id="balance-span">1200</span>
           </p>
         </div>
       </div>
@@ -41,25 +41,33 @@
       <div
         class="input-section-main-div grid gap-3 lg:grid-cols-2 grid-cols-1 lg:w-1/2 w-4/5"
       >
-        <div class="deposite-input bg-fuchsia-400 p-5 grid gap-3 rounded-xl">
+        <div
+          class="deposite-input-div bg-fuchsia-400 p-5 grid gap-3 rounded-xl"
+        >
           <h1 class="text-2xl font-semibold">Your Deposite</h1>
           <input
             class="block p-3 rounded-xl"
+            id="deposite-input"
             type="text"
             placeholder="Enter the amount"
           />
-          <button class="bg-red-400 p-3 hover:bg-red-600 w-1/2 rounded-xl">
+          <button
+            class="bg-red-400 p-3 hover:bg-red-600 w-1/2 rounded-xl"
+            id="deposite-btn"
+          >
             Deposite
           </button>
         </div>
-        <div class="withdraw-input bg-lime-400 p-5 grid gap-3 rounded-xl">
+        <div class="withdraw-input-div bg-lime-400 p-5 grid gap-3 rounded-xl">
           <h1 class="text-2xl font-semibold">Your Deposite</h1>
           <input
+            id="withdraw-input"
             class="block p-3 rounded-xl"
             type="text"
             placeholder="Enter the amount"
           />
           <button
+            id="withdraw-btn"
             class="bg-purple-400 p-3 hover:bg-purple-600 w-1/2 rounded-xl"
           >
             Withdraw
@@ -68,5 +76,6 @@
       </div>
     </section>
     <!-- Input Field Section Ends -->
+    <script src="app.js"></script>
   </body>
 </html>
