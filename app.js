@@ -16,6 +16,7 @@ let addDepositeAmount = document
     updateDeposite.innerText = currentDepositeAmount;
     currentBalance = currentBalance + parseFloat(getDepositeAmount.value);
     updateBalance.innerText = currentBalance;
+    getDepositeAmount.value = "";
   });
 
 let updateWithdraw = document.getElementById("withdraw-span");
@@ -28,4 +29,5 @@ let addWithdrawAmount = document
     updateWithdraw.innerText = currentDepositeAmount;
     currentBalance = currentBalance - parseFloat(getWithdrawAmount.value);
     updateBalance.innerText = currentBalance;
+    getWithdrawAmount.value = "";
   });
